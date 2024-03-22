@@ -5,10 +5,10 @@ Clone this repository for your local machine
 
 then run following command 
 
-'''
+```
 npm install
-'''
+```
 
-'''
+```
 npm run dev
-'''
+```
