@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./components/Home";
 import Calculator from "./components/Calculator";
 import Derivation from "./components/Derivation";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Quiz from "./components/Quiz";
+import Resource from "./components/Resource";
+import "./index.css";
 
 const router = createBrowserRouter([
   //put list of all the objects here
   {
     path: "/",
     element: <Layout />,
-    childern: [
+    children: [
       {
         path: "",
         element: <Home />,
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
       {
         path: "derivation",
         element: <Derivation />,
+      },
+      {
+        path: "resource",
+        element: <Resource />,
+      },
+      {
+        path: "quiz",
+        element: <Quiz />,
       },
     ],
   },
