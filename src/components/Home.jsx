@@ -10,7 +10,7 @@ export default function Home() {
                         <h5 className="text-4xl font-bold sm:text-5xl">
                             <span className="hidden sm:block text-4xl">Mastering The Master Method</span>
                         </h5>
-
+                        <p></p>
                         <Link
                             className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
                             to="/"

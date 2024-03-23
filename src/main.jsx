@@ -5,7 +5,7 @@ import Layout from "./Layout";
 import Home from "./components/Home";
 import Calculator from "./components/Calculator";
 import Derivation from "./components/Derivation";
-import Quiz from "./components/Quiz";
+import QuizApp from "./quiz/QuizApp";
 import Resource from "./components/Resource";
 import "./index.css";
 
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "quiz",
-        element: <Quiz />,
+        element: <QuizApp />,
       },
     ],
   },
