@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import Calculator from "./components/Calculator";
 import Derivation from "./components/Derivation";
 import QuizApp from "./quiz/QuizApp";
-import Resource from "./components/Resource";
+import Resource from "./resource/components/Resource";
 import "./index.css";
 
 const router = createBrowserRouter([
