@@ -38,7 +38,7 @@ const Calculator = () => {
       if (parseInt(p) > -1) {
         // for second 2a case
         let powerTerm =
-          parseInt(p) + 1 === 1 ? "" : ` log<sup>${parseInt(p) + 1}</sup>n`;
+          parseInt(p) + 1 !== 1 ? "" : ` log<sup>${parseInt(p) + 1}</sup>n`;
         if (logN === "0") {
           setComplexity(`Θ(log<sup>${powerTerm}</sup>n)`);
         }
