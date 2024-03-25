@@ -25,11 +25,11 @@ const cardInfo = [
 export default function Home() {
   return (
     <>
-      <div className="mx-auto w-full px-9 lg:mt-36 sm:mt-20  max-w-7xl flex flex-col items-center justify-center min-h-screen">
+      <div className="mx-auto w-full px-9 lg:mt-36 sm:mt-20  max-w-7xl flex flex-col items-center justify-center min-h-screen pt-8">
         <div className="text-center">
           <h1
             id="heading"
-            className="text-4xl sm:text-5xl font-bold text-white mb-8"
+            className="text-4xl sm:text-5xl font-bold text-white mb-8 sm:pt-8"
           >
             Mastering The Master Method
           </h1>

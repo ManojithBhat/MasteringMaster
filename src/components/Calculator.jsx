@@ -103,7 +103,7 @@ const Calculator = () => {
       </header>
       <div
         className="flex bg-white flex-col lg:flex-row justify-center lg:justify-between items-center  lg:ml-48
-lg:mr-48 rounded-md"
+lg:mr-48 rounded-md gap-4"
       >
         <div className="max-w-md mx-auto lg:w-1/2 m-auto lg:order-first lg:mr-8">
           <img
