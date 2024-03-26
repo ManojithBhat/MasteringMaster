@@ -49,7 +49,7 @@ function Resource() {
           <div className="my-4 rounded-lg p-6">
             {/* Additional Resources */}
             <div className="text-2xl sm:text-base mb-10 font-medium text-white">
-              Some insightful webstie to look for : 
+              Some insightful website to look for : 
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
               {websiteLinks.map((Ilink, index) => (
