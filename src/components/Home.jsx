@@ -25,7 +25,7 @@ const cardInfo = [
 export default function Home() {
   return (
     <>
-      <div className="mx-auto w-full px-9 lg:mt-36 sm:mt-20  max-w-7xl flex flex-col items-center justify-center min-h-screen pt-8">
+      <div className="mx-auto w-full px-9  sm:mt-20  max-w-7xl flex flex-col items-center justify-center min-h-screen pt-8">
         <div className="text-center">
           <h1
             id="heading"
@@ -40,7 +40,7 @@ export default function Home() {
             skills and conquer complex computational challenges with ease
           </p>
           <Link
-            to="/"
+            to="/derivation"
             className="inline-flex items-center px-6 py-3 font-medium bg-[#8184ed] rounded-lg text-white hover:bg-[#9d5af5]"
           >
             LEARN NOW

@@ -18,8 +18,8 @@ function Starter({setStartQuiz}) {
           <span className="text">Number of questions</span>
         </p>
         <p>
-          <span className="number">60s</span>
-          <span className="text">Time</span>
+          <span className="number">10s</span>
+          <span className="text">Time/question</span>
         </p>
       </div>
       <button onClick={handleStartQuiz} className="btn inline-flex items-center px-6 py-3 font-medium bg-[#dadae2] rounded-lg text-stone-800">

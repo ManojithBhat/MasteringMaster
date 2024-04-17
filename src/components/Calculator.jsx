@@ -19,6 +19,22 @@ const Calculator = () => {
       return;
     }
 
+    if (a < 1) {
+      alert("Please enter a valid value for 'a'.");
+      return;
+    }
+    
+    if (b <= 1) {
+      alert("Please enter a valid value for 'b'.");
+      return;
+    }
+    
+    if (k < 0) {
+      alert("Please enter a valid value for 'k'.");
+      return;
+    }
+    
+
     const logN = getBaseLog(b, a).toFixed(0);
 
     if (parseInt(a) > Math.pow(parseInt(b), parseInt(k))) {
@@ -102,10 +118,10 @@ const Calculator = () => {
         <h1>Master Calculator</h1>
       </header>
       <div
-        className="flex bg-white flex-col lg:flex-row justify-center lg:justify-between items-center  lg:ml-48
+        className="flex flex-col lg:flex-row justify-center lg:justify-between items-center sm:bg-gray-800 lg:ml-48
 lg:mr-48 rounded-md gap-4"
       >
-        <div className="max-w-md mx-auto lg:w-1/2 m-auto lg:order-first lg:mr-8">
+        <div className="border max-w-md mx-auto lg:w-1/2 m-auto lg:order-first lg:mr-8">
           <img
             className="m-auto lg:ml-0 w-full lg:w-auto h-auto object-cover"
             src="https://i0.wp.com/krantesh.com/wp-content/uploads/2019/09/WINWORD_2019-09-04_15-56-58.png?fit=1022%2C616&ssl=1"
@@ -120,10 +136,11 @@ lg:mr-48 rounded-md gap-4"
             <div className="lg:w-1/2 lg:mr-2 mb-2 lg:mb-0">
               <label className="block mb-2 text-white">Enter value of a:</label>
               <input
+                
                 type="number"
                 value={a}
                 onChange={(e) => setA(e.target.value)}
-                className="block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500 bg-gray-300 text-gray-800"
+                className="block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500 bg-gray-300 text-gray-800 text-center"
               />
             </div>
             <div className="lg:w-1/2 lg:ml-2">
@@ -132,7 +149,7 @@ lg:mr-48 rounded-md gap-4"
                 type="number"
                 value={b}
                 onChange={(e) => setB(e.target.value)}
-                className="block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500 bg-gray-300 text-gray-800"
+                className="block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500 bg-gray-300 text-gray-800 text-center"
               />
             </div>
           </div>
@@ -142,7 +159,7 @@ lg:mr-48 rounded-md gap-4"
               type="number"
               value={k}
               onChange={(e) => setK(e.target.value)}
-              className="block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500 bg-gray-300 text-gray-800"
+              className="block w-full rounded-md border-gray-300 focus:border-blue-500 text-center focus:ring-blue-500 bg-gray-300 text-gray-800"
             />
           </div>
           <div className="mb-4">
@@ -151,7 +168,7 @@ lg:mr-48 rounded-md gap-4"
               type="number"
               value={p}
               onChange={(e) => setP(e.target.value)}
-              className="block w-full rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500 bg-gray-300 text-gray-800"
+              className="block w-full rounded-md border-gray-300 focus:border-blue-500 text-center focus:ring-blue-500 bg-gray-300 text-gray-800"
             />
           </div>
           <button
@@ -179,7 +196,7 @@ lg:mr-48 rounded-md gap-4"
 
       <div
         className="flex-col lg:flex-row justify-center lg:justify-between items-center mt-20 lg:ml-48
-lg:mr-48  text-white rounded-lg align-middle"
+lg:mr-48  text-white rounded-lg align-middle p-16"
       >
   <div className="space-y-6 lg:grid lg:grid-cols-2 lg:gap-x-8">
   <div className="mb-4">
