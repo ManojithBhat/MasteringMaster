@@ -34,7 +34,6 @@ const Calculator = () => {
       return;
     }
     
-
     const logN = getBaseLog(b, a).toFixed(0);
 
     if (parseInt(a) > Math.pow(parseInt(b), parseInt(k))) {
